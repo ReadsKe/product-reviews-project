@@ -1,0 +1,57 @@
+{
+    "reviews": [
+        {
+            "id": 1,
+            "product_name": "SAMSUNG Galaxy A53 ",
+            "product_url": "https://m.media-amazon.com/images/I/71HN4P-pd5L._AC_SX679_.jpg",
+            "description": "SAMSUNG Galaxy A53 5G A Series Cell Phone, Factory Unlocked Android Smartphone, 128GB, 6.5” FHD Super AMOLED Screen, Long Battery Life, US Version, Black",
+            "price": 1000,
+            "category": "Electronics, Phones"
+        },
+        {
+            "id": 2,
+            "product_name": "SAMSUNG Galaxy A53 ",
+            "product_url": "https://m.media-amazon.com/images/I/71HN4P-pd5L._AC_SX679_.jpg",
+            "description": "SAMSUNG Galaxy A53 5G A Series Cell Phone, Factory Unlocked Android Smartphone, 128GB, 6.5” FHD Super AMOLED Screen, Long Battery Life, US Version, Black",
+            "price": 1000,
+            "category": "Electronics, Phones"
+
+          },
+          {
+            "id": 3,
+            "product_name": "SAMSUNG Galaxy A53 ",
+            "product_url": "https://m.media-amazon.com/images/I/71HN4P-pd5L._AC_SX679_.jpg",
+            "description": "SAMSUNG Galaxy A53 5G A Series Cell Phone, Factory Unlocked Android Smartphone, 128GB, 6.5” FHD Super AMOLED Screen, Long Battery Life, US Version, Black",
+            "price": 1000,
+            "category": "Electronics, Phones"
+          },
+          {
+            "id": 4,
+            "product_name": "SAMSUNG Galaxy A53 ",
+            "product_url": "https://m.media-amazon.com/images/I/71HN4P-pd5L._AC_SX679_.jpg",
+            "description": "SAMSUNG Galaxy A53 5G A Series Cell Phone, Factory Unlocked Android Smartphone, 128GB, 6.5” FHD Super AMOLED Screen, Long Battery Life, US Version, Black",
+            "price": 1000,
+            "category": "Electronics, Phones"
+
+          },
+          {
+            "id": 5,
+            "product_name": "SAMSUNG Galaxy A53 ",
+            "product_url": "https://m.media-amazon.com/images/I/71HN4P-pd5L._AC_SX679_.jpg",
+            "description": "SAMSUNG Galaxy A53 5G A Series Cell Phone, Factory Unlocked Android Smartphone, 128GB, 6.5” FHD Super AMOLED Screen, Long Battery Life, US Version, Black",
+            "price": 1000,
+            "category": "Electronics, Phones"
+
+          },
+          {
+            "id": 1,
+            "product_name": "SAMSUNG Galaxy A53 ",
+            "product_url": "https://m.media-amazon.com/images/I/71HN4P-pd5L._AC_SX679_.jpg",
+            "description": "SAMSUNG Galaxy A53 5G A Series Cell Phone, Factory Unlocked Android Smartphone, 128GB, 6.5” FHD Super AMOLED Screen, Long Battery Life, US Version, Black",
+            "price": 1000,
+            "category": "Electronics, Phones"
+
+          }
+    ]
+
+}
