@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddProduct from '../components/AddProduct';
+import Swal from 'sweetalert2';
 
 const NewProduct = () => {
   const [newProduct, setNewProduct] = useState(null);
@@ -23,9 +24,14 @@ const NewProduct = () => {
         setNewProduct(res);
         setProductToUpdate(null); 
       })
-      .catch((error) => {
-        console.error('Error updating product:', error);
-      });
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        iconColor:'##FFA500',
+        title: 'Product Updated successfully!',
+        showConfirmButton: false,
+        timer: 1000
+    })
   };
 
   return (
@@ -45,14 +51,14 @@ const NewProduct = () => {
                     <p className="card-text">Production status: {newProduct.status}</p>
                     <p className="card-text">Available colors: {newProduct.colors}</p>
                     <p className="card-text">Approx price: $ {newProduct.approx_price_EUR}</p>
-                    <p className="card-text"> user_reviews: {newProduct.user_reviews}</p>
+                    <p className="card-text"> Reviews: {newProduct.user_reviews}</p>
 
                   </div>
                 </div>
                 <div className="col-md-3">
                   <div className="card-body">
                     <h4 className="card-title">Reviews</h4>
-                    <p className="card-text"> user_reviews: {newProduct.user_reviews}</p>
+                    <p className="card-text"> Reviews: {newProduct.user_reviews}</p>
                   </div>
                 </div>
             </div>

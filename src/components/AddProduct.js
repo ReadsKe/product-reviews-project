@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Swal from 'sweetalert2';
 
 function AddProduct({ onAddProduct, onUpdateProduct, productToUpdate }) {
   const [product, setProduct] = useState({
@@ -8,7 +9,7 @@ function AddProduct({ onAddProduct, onUpdateProduct, productToUpdate }) {
     announced: '',
     status: '',
     colors: '',
-    reviews: '',
+    user_reviews: '',
     approx_price_EUR: '',
   });
 
@@ -20,7 +21,7 @@ function AddProduct({ onAddProduct, onUpdateProduct, productToUpdate }) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setProduct({ ...product, [name]: value });
+    setProduct({ ...product, [name]: name === 'user_reviews'? value : value });
   };
 
   const handleSubmit = (e) => {
@@ -43,9 +44,14 @@ function AddProduct({ onAddProduct, onUpdateProduct, productToUpdate }) {
           console.log('New product added:', res);
           onAddProduct(res);
         })
-        .catch((error) => {
-          console.error('Error adding product:', error);
-        });
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          iconColor:'#008000',
+          title: 'Product Posted successfully!',
+          showConfirmButton: false,
+          timer: 1000
+      })
     }
 
     // Reset the form after submission
@@ -56,7 +62,7 @@ function AddProduct({ onAddProduct, onUpdateProduct, productToUpdate }) {
       announced: '',
       status: '',
       colors: '',
-      reviews: '',
+      user_reviews: '',
       approx_price_EUR: '',
     });
   };
@@ -92,9 +98,8 @@ function AddProduct({ onAddProduct, onUpdateProduct, productToUpdate }) {
           </div>
           <div className="mb-3">
             <label className="form-label">User Review</label>
-            <textarea className="form-control" rows="2" name="reviews" onChange={handleChange} ></textarea>
+            <textarea className="form-control" rows="2" name="reviews" value={product.user_reviews} onChange={handleChange}></textarea>
           </div>
-
           <button type="submit" className="btn btn-primary">{productToUpdate ? 'Update' : 'Submit'} </button>  
         </form>
     </div>

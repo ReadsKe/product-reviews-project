@@ -53,7 +53,7 @@ const ProductList = () => {
                   </div>
                 </div>
                 <Product key={product.id} product={product} onDelete={deleteProduct} />
-                              </div>
+                </div>
               <Link to={`/products/${product.id}`} className="btn btn-primary">
                 View Details
               </Link>

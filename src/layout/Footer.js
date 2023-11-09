@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
   return (
-    <div className="container ">
-    <footer className="py-3 my-4">
-        <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-        <li className="nav-item"><Link href="#" className="nav-link px-2 text-muted text-light">Home</Link></li>
-        <li className="nav-item"><Link href="#" className="nav-link px-2 text-muted text-light">About</Link></li>
-        <li className="nav-item"><Link href="#" className="nav-link px-2 text-muted text-light">Contact</Link></li>
-          </ul>
-        <p className="text-center .text-light">© 2022 Company, Inc</p>
+    <div>
+    <footer className=" bg-light">
+        <ul className="nav justify-content-center border-bottom pb-3 mb-3 text-black" >
+        <li className="nav-item"><Link className="nav-link active" to="/">Home</Link></li>
+        <li className="nav-item"><Link className="nav-link active" to="/">About</Link></li>
+        <li className="nav-item"><Link className="nav-link active" to="/">Contact</Link></li>
+        <li className="nav-item"><Link className="nav-link active" to="/">New Product Listing</Link></li>
+        </ul>
+        <p className="text-center text-black"> © 2022 Phone Store, Inc</p>
     </footer>
     </div>
   )
