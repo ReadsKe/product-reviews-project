@@ -68,7 +68,7 @@ function AddProduct({ onAddProduct, onUpdateProduct, productToUpdate }) {
       <form onSubmit={handleSubmit}>
       <div className="mb-3">
             <label className="form-label">Brand Details </label>
-            <input type="text" class="form-control form-control-sm" name="brand" required value={product.brand} onChange={handleChange} />
+            <input type="text" className="form-control form-control-sm" name="brand" required value={product.brand} onChange={handleChange} />
           </div>
           <div className="mb-3">
             <label className="form-label">Image Link </label>
