@@ -3,9 +3,29 @@ import AddProduct from '../components/AddProduct';
 
 const NewProduct = () => {
   const [newProduct, setNewProduct] = useState(null);
+  const [productToUpdate, setProductToUpdate] = useState(null);
 
   const addProductToList = (newProduct) => {
     setNewProduct(newProduct);
+  };
+  const updateProduct = (updatedProduct) => {
+    // PATCH
+    fetch(`http://localhost:3000/phones/${updatedProduct.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updatedProduct),
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        console.log('Product updated:', res);
+        setNewProduct(res);
+        setProductToUpdate(null); 
+      })
+      .catch((error) => {
+        console.error('Error updating product:', error);
+      });
   };
 
   return (
@@ -37,9 +57,10 @@ const NewProduct = () => {
                 </div>
             </div>
         </div>
+        <button onClick={() => setProductToUpdate(newProduct)} className="btn btn-warning"> Update Listing </button>
     </div>
       )}
-      <AddProduct onAddProduct={addProductToList} />
+      <AddProduct onAddProduct={addProductToList} onUpdateProduct={updateProduct} productToUpdate={productToUpdate} />
   </div>
   );
 };
