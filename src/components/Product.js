@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 const Product = ({ product, onDelete }) => {
   const handleDelete = () => {
-    fetch(`http://localhost:3000/bots/${product.id}`, {
+    fetch(`https://product-reviews-4iuh.onrender.com/phones/${product.id}`, {
         method: 'DELETE',
       })
         .then((res) => res.json())

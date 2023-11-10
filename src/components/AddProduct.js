@@ -32,7 +32,7 @@ function AddProduct({ onAddProduct, onUpdateProduct, productToUpdate }) {
       onUpdateProduct(product);
     } else {
       // Otherwise, it's an add operation
-      fetch('http://localhost:3000/phones', {
+      fetch('https://product-reviews-4iuh.onrender.com/phones', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,6 +1,6 @@
 ### Product Review App
 
-## By Samuel Kimote th November 2023
+## By Samuel Kimote 10th November 2023
 
 ### Project Details 
 
@@ -15,6 +15,9 @@ This web application allows users to explore a diverse range of products and sha
 ## Usage
 - The Home/ Landing Page displays available phones from the backend. A view details button open a window with full       details of the product 
 - The New Product listing page displays only new product listed and enables updated and posting to the backend 
+## Live links 
+- Render Backend https://product-reviews-4iuh.onrender.com
+- React https://654dba128dc67b2abfb13d9f--guileless-swan-07f505.netlify.app/
 
 ## Known Bugs
 - The User review section posts to the backend but does not display in the front end 

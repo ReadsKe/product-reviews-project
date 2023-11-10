@@ -11,7 +11,7 @@ const ProductList = () => {
 
 
   useEffect(() => {
-    fetch(" http://localhost:3000/phones")
+    fetch("https://product-reviews-4iuh.onrender.com/phones")
       .then((res) => res.json())
       .then((res) => {
         setProducts(res);

@@ -11,7 +11,7 @@ const NewProduct = () => {
   };
   const updateProduct = (updatedProduct) => {
     // PATCH
-    fetch(`http://localhost:3000/phones/${updatedProduct.id}`, {
+    fetch(`https://product-reviews-4iuh.onrender.com/phones/${updatedProduct.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

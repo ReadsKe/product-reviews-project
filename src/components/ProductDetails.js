@@ -6,7 +6,7 @@ const ProductDetails = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/phones/${id}`)
+    fetch(`https://product-reviews-4iuh.onrender.com/phones/${id}`)
     .then((res) => res.json())
     .then((res) => {
      setProduct(res);
